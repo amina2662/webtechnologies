@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookstore Landing Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	<div class="container">
+		<img class="top-left" src="image9.png" alt="First Image">
+      	<img class="bottom-right" src="land.png" alt="Second Image">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h5>
+					<img src="logo.png" class="img-circle" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+				Worth_Reads</h5>
+				<h1>Welcome to Our Bookstore</h1>
+				<p id="char-by-char">Discover the latest and greatest books from your favorite authors.</p>
+				<button class="btn btn-lg btn-secondary">Explore Now</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Bootstrap JS and jQuery -->
+	<script>
+		// Get the paragraph element and its text content
+		const paragraph = document.getElementById("char-by-char");
+		const text = paragraph.textContent;
+	
+		// Clear the text content of the paragraph element
+		paragraph.textContent = "";
+	
+		// Loop through each character in the text content and add it to the paragraph element with a delay
+		for (let i = 0; i < text.length; i++) {
+			setTimeout(() => {
+				paragraph.textContent += text[i];
+			}, i * 100); // 100 milliseconds delay between each character
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
