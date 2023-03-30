@@ -1,0 +1,80 @@
+body {
+    font-family: Lucida Console;
+    background-color: black;
+    color: white;
+  }
+  .vertical-line {
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  .content{
+    padding: 250px;
+    display: block;
+    float: right;
+    justify-content: center;
+    align-items: center;
+  }
+  .content p{
+    color: white;
+  }
+  
+  .about {
+    padding: 100px;
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .about p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+  }
+  
+  .footer h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .footer p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .footer ul li i {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .footer-bottom p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
