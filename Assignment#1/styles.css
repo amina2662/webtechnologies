@@ -1,0 +1,33 @@
+h1{
+    font-family: cambria;
+    justify-content: flex-start;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+h2{
+    font-family: cambria;
+    justify-content: flex-start;
+    font-weight: bold;
+    padding-left: 40px;
+}
+h3{
+    font-family: cambria;
+}
+p{
+    font-family: cambria;
+    font-weight: bold;
+    padding-left: 40px;
+}
+li{
+    font-family: cambria;
+    font-weight: bold;
+}
+td,th{
+    font-family: cambria;
+}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+table{
+    width: 100%;
+}
