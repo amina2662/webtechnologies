@@ -1,0 +1,83 @@
+body {
+	font-family: Lucida Console;
+	background-color: black;
+	color: white;
+
+  }
+
+  h1 {
+	text-align: center;
+  }
+
+  .bottom-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  }
+  form {
+	margin: auto;
+	max-width: 500px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+
+  label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+	width: 95%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 16px;
+  }
+
+  button[type="submit"] {
+	background-color: transparent;
+	color: grey;
+	padding: 10px 20px;
+	border: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+  }
+
+  button[type="submit"]:hover {
+	background-color: grey;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: grey;
+    border: grey;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .form-message {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f2dede;
+	color: #a94442;
+	border-radius: 5px;
+	display: none;
+  }
+
+  .form-message.success {
+	background-color: #dff0d8;
+	color: #3c763d;
+	display: block;
+  }
+
+  .invalid-input {
+	border-color: red;
+  }
