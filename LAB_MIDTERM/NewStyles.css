@@ -1,0 +1,87 @@
+
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .box {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+     .header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .phone-number {
+      margin-right: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .center-text {
+      font-size: 14px;
+    }
+
+    .website-name {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+    }
+  
+    /* Container for the photo slideshow */
+    .slideshow-container {
+      max-width: 600px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    /* Slides */
+    .slideshow {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    /* Individual slide */
+    .slide {
+      flex: 0 0 100%;
+    }
+    
+    /* Slideshow navigation buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: #f8f8f8;
+      color: #333;
+      font-size: 20px;
+      z-index: 1;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }

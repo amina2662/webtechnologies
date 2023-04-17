@@ -1,0 +1,198 @@
+body{
+    font-family: Lucida Console;
+    background: white;
+    color: black;
+  }
+  .vertical-line {
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 30px;
+    margin: 0 10px;
+  }
+  #page{
+    overflow: hidden;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .thumbnail_1 {
+    display: block;
+    float: left;
+    align-items: left;
+    margin-top: 30px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+	  height: 350px;
+    margin-right: 20px;
+  }
+  .thumbnail_1 img {
+    width: 490px;
+	  height: 340px;
+    margin-bottom: 20px;
+  }
+  
+  .content{
+    display: block;
+    float: right;
+    align-items: right;
+  }
+  .content p{
+    color: black;
+  }
+
+  /*Categories*/
+  .card{
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+  }
+  .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border-color: grey;
+    border-radius: 5%;
+    color: grey;
+}
+  
+/* Reviews Section Styles */
+.reviews {
+    padding: 60px 0;
+  }
+  
+  .reviews h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .review-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .review-content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .review-author {
+    text-align: right;
+  }
+  
+  .author-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .author-info {
+    font-size: 14px;
+    color: #6c757d;
+  }  
+
+/* Newsletter Section Styles */
+.newsletter {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+  
+  .newsletter h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter input {
+    flex: 1;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .newsletter button {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #007bff;
+  }
+  
+  .newsletter button:hover {
+    background-color: #0069d9;
+  }
+
+/* Footer Section Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  margin: 0;
+}
