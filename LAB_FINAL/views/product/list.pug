@@ -1,0 +1,29 @@
+extends ../layout
+
+block content
+    .row
+        .col-sm-8
+            br
+            h1 Available Destinations
+    table.table
+        thead
+            tr
+                th Title
+                th Slug
+                th Attraction
+        tbody
+            each product in products
+                tr
+                    td= product.title 
+                    td=product.slug
+                    td=product.attraction
+                    td
+                        a(href="/product/delete/"+product._id, class="btn btn-danger") Delete
+
+    .row
+        .col-sm-4
+            br
+            a(href="/product/add", class="btn btn-dark float-right ") Add Product
+
+       
+                        

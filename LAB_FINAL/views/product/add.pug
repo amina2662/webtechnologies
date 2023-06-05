@@ -1,0 +1,20 @@
+extends ../layout
+
+block content 
+    h3 Add Destination
+    br
+    form(action="/product/add",method="post")
+        br
+        .form-group
+            label(for="title") Title
+            input#name(type="text", class="form-control", name="title")
+        br
+        .form-group
+            label(for="slug") Slug
+            input#slug(type="text", class="form-control", name="slug")
+        br
+        .form-group
+            label(for="attraction") Attraction
+            input#attraction(type="text", class="form-control", name="attraction")
+        br
+        input(type="submit", class="btn btn-info")
