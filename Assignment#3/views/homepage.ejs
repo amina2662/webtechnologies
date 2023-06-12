@@ -1,0 +1,154 @@
+
+
+<%-contentFor('body') %>
+  <div id="page"> 
+    <div class="thumbnail_1 ">
+      <img src="/img/poster.png" alt="Book Cover">
+    </div>
+    
+    <div class="content"> 
+      <h1 class="display-4">Worth_Reads</h1>
+      <p id="char-by-char"> Escape into a world of imagination </br> with our vast selection of books. </br> Satisfy your literary cravings </br> with our handpicked selection of books. </p>
+      <a class="btn btn-secondary btn-lg" href="#" role="button">Browse Now</a>
+    </div>
+  </div>
+  
+  <!-- Categories Of Books -->
+  <div class="container">
+    <h2 class="text-center">Categories</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="/img/Fiction.png" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Fiction</h5>
+            <p class="card-text">Explore our  fiction books, from classic literature to  bestsellers.</p>
+          </div>
+          <div class="card-footer py-4">
+            <a href="#" class="btn btn-secondary">View Books</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="/img/Literature.png" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Literature</h5>
+            <p class="card-text">Discover our  non-fiction books, covering everything from history to science.</p>
+            </div>
+          <div class="card-footer py-4">
+            <a href="#" class="btn btn-secondary">View Books</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="/img/Children.png" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Children's Books</h5>
+            <p class="card-text">Browse our selection of children's books, from picture books to young adult novels.</p>
+           </div>
+          <div class="card-footer py-4">
+            <a href="#" class="btn btn-secondary">View Books</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="/img/Science.png" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Science</h5>
+            <p class="card-text">See what everyone is talking about with our collection of bestselling books.</p>
+           </div>
+           <div class="card-footer py-4">
+            <a href="#" class="btn btn-secondary">View Books</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="button" class="btn btn-secondary btn-lg" style="width: 200px; left:300px">See All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <div class="container">
+      <h3 class="text-center">What Our Customers Say</h3>
+      <div class="row">
+    <% for( let index = 0; index < exps.length; index++ ) { %>
+        <div class="col-md-4">
+          <div class="review-box">
+            <div class="review-content">
+              <p><%= exps[index].thoughts %></p>
+            </div>
+            <div class="review-author">
+              <p class="author-name"><%= exps[index].name %></p>
+              <p class="author-info"><%= exps[index].designation %></p>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="/add" class="btn btn-secondary">Share Your Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Subscribe to our Newsletter</h3>
+          <p>Stay in the loop with our newsletter and never miss out on a great read again! We'll keep you informed on the newest books, popular titles, and bestsellers.</p>
+        </div>
+        <div class="col-md-6">
+          <form class="form-inline justify-content-md-end">
+            <div class="form-group">
+              <label class="sr-only" for="email" style="color: black">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+          </form>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <a href="#" class="btn btn-secondary">SUBSCRIBE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<%-contentFor('footer') %>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>About Us</h3>
+          <p>At our bookstore, we believe that reading is a fundamental part of personal growth and community building. Our mission is to inspire and educate readers of all ages by providing a curated selection of books, events, and resources.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="bi bi-geo-alt"></i> Address: 123 Main St, New York, NY 10001</li>
+            <li><i class="bi bi-telephone"></i> Phone: (123) 456-7890</li>
+            <li><i class="bi bi-envelope-at-fill"></i> Email: info@bookstore.com</li>
+          </ul>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-messenger"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Bookstore. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
