@@ -1,0 +1,43 @@
+
+<%-contentFor('body') %>
+<script>
+  function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (name === "" || email === "" || password === "") {
+      // Display an error message
+      document.getElementById("form-message").innerHTML = "Please fill in all the required fields.";
+      return false; // Prevent form submission
+    }
+
+    // Form validation passed, allow submission
+    return true;
+  }
+</script>
+
+<h1 id="head">
+    <img src="/img/logo.png" class="img-circle" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+  Worth_Reads
+</h1>
+
+    <h1 id="head">Sign Up form</h1>
+    <img class="bottom-right" src="/img/image2.png" alt=" Image">
+    <form id="signup-form" method="post" onsubmit="return validateForm();" action="/">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="amina2662" style="font-family: Lucida Console;">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="abc@gmail.com" style="font-family: Lucida Console;">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="......" style="font-family: Lucida Console;">
+      <a href="/"> 
+        Sign Up</button>
+      </a>
+      <h5> already have an account???
+      <a href="/land/log"> 
+            Log In</button>
+      </a>
+      </h5>
+      <div class="form-message"></div>
+    </form>
