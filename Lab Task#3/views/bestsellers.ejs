@@ -1,0 +1,13 @@
+
+<%-contentFor('body') %>
+
+<h1> Saved Collection </h1>
+
+<% for( let index = 0; index < cart.length; index++ ) { %>
+    <div>
+        <h2 ><%= cart[index].title %></h2>
+        <p> Written By: <%= cart[index].author %> </br> Published in: <%= cart[index].published %> </br> Pages: <%= cart[index].pages %></p>
+        <a href="/upcomingbooks/delete/<%= cart[index]._id %>" class="btn btn-secondary">Unsave</a>
+        <a href="/edit/<%= cart[index]._id %>" class="btn btn-secondary">Edit</a>
+    </div>
+    <% } %>

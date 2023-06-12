@@ -1,0 +1,35 @@
+
+<%-contentFor('body') %>
+
+<div class="container1">
+  <h1>
+      <img src="/img/Category.png" class="img-circle" alt="Logo" width="150" height="150" class="d-inline-block align-text-top">
+  </h1>
+  <h1 class="heading">UPCOMING BOOKS</h1>
+</div>
+
+<div class="container">
+  <div class="row text-center">
+    <% for( let index = 0; index < books.length; index++ ) { %>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="/img/Fiction.png" alt="Category 1">
+        <div class="card-body">
+          <h5 class="card-title"> By
+            <%= books[index].author %>
+          </h5>
+          <p class="card-text">
+            Published in <%= books[index].published %> </br>
+            Pages: <%= books[index].pages %> </br>
+            Price: <%= books[index].price %>
+          </p>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="/bestsellers/<%= books[index]._id %>" class="btn btn-secondary">Save Book</a>
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>
+
